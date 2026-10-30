@@ -2,12 +2,6 @@
 import { useRef, useState } from "react";
 import "./ChatWidget.css";
 
-const apiKey = import.meta.env.VITE_AI_API_KEY;
-const model = import.meta.env.VITE_AI_MODEL || "qwen/qwen3.8-27b";
-const apiUrl =
-  import.meta.env.VITE_AI_API_URL ||
-  "https://api.groq.com/openai/v1/chat/completions";
-
 const welcomeMessage = {
   role: "assistant",
   content:
@@ -35,61 +29,28 @@ export default function ChatWidget() {
     setIsSending(true);
 
     try {
-      if (!apiKey) {
-        throw new Error(
-          "Chatbot belum dikonfigurasi. Tambahkan VITE_AI_API_KEY di environment Vercel, lalu deploy ulang.",
-        );
-      }
-
-      const response = await fetch(apiUrl, {
+      const response = await fetch("/api/chat", {
         method: "POST",
-        headers: {
-          Authorization: `Bearer ${apiKey}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          model,
-          messages: [
-            {
-              role: "system",
-              content: [
-                "Kamu adalah asisten ramah Kopi Ruang Kita. Jawab dalam bahasa Indonesia dengan singkat dan sopan.",
-                "Gunakan hanya fakta pada data berikut. Jangan mengarang bahan, rasa, fasilitas, harga, promo, atau informasi lain.",
-                "Jika informasi tidak tersedia, katakan bahwa informasinya belum tercantum dan arahkan pengunjung untuk menghubungi kedai.",
-                "Data website:",
-                JSON.stringify(knowledge),
-              ].join("\n"),
-            },
-            ...nextMessages.slice(-11),
-          ],
-          max_completion_tokens: 300,
-          temperature: 0.3,
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: nextMessages.slice(-11) }),
       });
       const result = await response.json().catch(() => ({}));
 
       if (!response.ok) {
-        const providerError = result.error?.message;
-        const errorMessage =
-          response.status === 401
-            ? "Groq menolak API key. Periksa VITE_AI_API_KEY di Vercel dan pastikan key masih aktif."
-            : response.status === 403
-              ? "Groq menolak akses untuk API key ini. Periksa status key dan izin project."
-              : response.status === 404
-                ? "Model atau endpoint tidak ditemukan. Periksa VITE_AI_MODEL dan VITE_AI_API_URL."
-                : response.status === 429
-                  ? "Batas penggunaan API Groq tercapai. Coba lagi nanti atau periksa kuota."
-                  : providerError ||
-                    `Layanan AI mengembalikan error (HTTP ${response.status}).`;
-        throw new Error(errorMessage);
+        throw new Error(
+          result.error ||
+            `Chatbot gagal merespons (HTTP ${response.status}). Pastikan API tersedia di deployment Vercel.`,
+        );
       }
 
-      const reply = result.choices?.[0]?.message?.content;
-      if (typeof reply !== "string" || !reply.trim()) {
+      if (typeof result.reply !== "string" || !result.reply.trim()) {
         throw new Error("Chatbot belum memberikan jawaban. Silakan coba lagi.");
       }
 
-      setMessages((current) => [...current, { role: "assistant", content: reply.trim() }]);
+      setMessages((current) => [
+        ...current,
+        { role: "assistant", content: result.reply.trim() },
+      ]);
     } catch (requestError) {
       setError(requestError.message || "Koneksi bermasalah. Silakan coba lagi.");
     } finally {
