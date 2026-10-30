@@ -1,0 +1,401 @@
+{
+  "description": "Daftar aset gambar dan ide menu untuk website Moo Coffee - UTS Pemrograman Web 2026",
+  "license": "Unsplash License)",
+  "assets": [
+    {
+      "id": "hero",
+      "name": "Hero Image - Suasana Kedai",
+      "type": "hero",
+      "category": "site",
+      "local_path": "assets/images/hero.jpg",
+      "url": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1600&q=80",
+      "alt": "Suasana interior Moo Coffee"
+    },
+    {
+      "id": "about-1",
+      "name": "Tentang Kami - Bar",
+      "type": "about",
+      "category": "site",
+      "local_path": "assets/images/about-1.jpg",
+      "url": "https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=800&q=80",
+      "alt": "Bar kopi dengan lampu gantung"
+    },
+    {
+      "id": "about-2",
+      "name": "Tentang Kami - Area Duduk",
+      "type": "about",
+      "category": "site",
+      "local_path": "assets/images/about-2.jpg",
+      "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+      "alt": "Area duduk kayu yang nyaman"
+    },
+    {
+      "id": "kopi-susu-gula-aren",
+      "name": "Kopi Susu Gula Aren",
+      "type": "product",
+      "category": "Coffee",
+      "local_path": "assets/images/kopi-susu-gula-aren.jpg",
+      "url": "https://images.unsplash.com/photo-1681366074674-13850edc6d6c?auto=format&fit=crop&w=800&q=80",
+      "alt": "Es kopi susu gula aren di gelas tinggi"
+    },
+    {
+      "id": "americano",
+      "name": "Kopi Americano",
+      "type": "product",
+      "category": "Coffee",
+      "local_path": "assets/images/americano.jpg",
+      "url": "https://images.unsplash.com/photo-1527156231393-7023794f363c?auto=format&fit=crop&w=800&q=80",
+      "alt": "Iced americano dalam gelas bening"
+    },
+    {
+      "id": "cappuccino",
+      "name": "Cappuccino",
+      "type": "product",
+      "category": "Coffee",
+      "local_path": "assets/images/cappuccino.jpg",
+      "url": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+      "alt": "Cappuccino dengan latte art"
+    },
+    {
+      "id": "caramel-macchiato",
+      "name": "Caramel Macchiato",
+      "type": "product",
+      "category": "Coffee",
+      "local_path": "assets/images/caramel-macchiato.jpg",
+      "url": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80",
+      "alt": "Iced caramel macchiato berlapis susu"
+    },
+    {
+      "id": "matcha-latte",
+      "name": "Matcha Latte",
+      "type": "product",
+      "category": "Non-Coffee",
+      "local_path": "assets/images/matcha-latte.jpg",
+      "url": "https://images.unsplash.com/photo-1717603545758-88cc454db69b?auto=format&fit=crop&w=800&q=80",
+      "alt": "Iced matcha latte hijau segar"
+    },
+    {
+      "id": "cokelat-klasik",
+      "name": "Cokelat Klasik",
+      "type": "product",
+      "category": "Non-Coffee",
+      "local_path": "assets/images/cokelat-klasik.jpg",
+      "url": "https://images.unsplash.com/photo-1559329187-79d04171a646?auto=format&fit=crop&w=800&q=80",
+      "alt": "Iced chocolate klasik dalam gelas"
+    },
+    {
+      "id": "thai-tea",
+      "name": "Thai Tea",
+      "type": "product",
+      "category": "Non-Coffee",
+      "local_path": "assets/images/thai-tea.jpg",
+      "url": "https://images.unsplash.com/photo-1644031995386-fe9665dc5b57?auto=format&fit=crop&w=800&q=80",
+      "alt": "Thai tea dengan es batu"
+    },
+    {
+      "id": "es-lemon-tea",
+      "name": "Es Lemon Tea",
+      "type": "product",
+      "category": "Non-Coffee",
+      "local_path": "assets/images/es-lemon-tea.jpg",
+      "url": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80",
+      "alt": "Es lemon tea segar dalam gelas"
+    },
+    {
+      "id": "croissant",
+      "name": "Croissant Mentega",
+      "type": "product",
+      "category": "Snack",
+      "local_path": "assets/images/croissant.jpg",
+      "url": "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=800&q=80",
+      "alt": "Croissant mentega renyah"
+    },
+    {
+      "id": "kentang-goreng",
+      "name": "Kentang Goreng",
+      "type": "product",
+      "category": "Snack",
+      "local_path": "assets/images/kentang-goreng.jpg",
+      "url": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=800&q=80",
+      "alt": "Kentang goreng crispy dalam keranjang"
+    },
+    {
+      "id": "roti-bakar",
+      "name": "Roti Bakar Cokelat Keju",
+      "type": "product",
+      "category": "Snack",
+      "local_path": "assets/images/roti-bakar.jpg",
+      "url": "https://images.unsplash.com/photo-1528736235302-52922df5c122?auto=format&fit=crop&w=800&q=80",
+      "alt": "Roti bakar isi cokelat dan keju"
+    },
+    {
+      "id": "brownies",
+      "name": "Brownies Cokelat",
+      "type": "product",
+      "category": "Snack",
+      "local_path": "assets/images/brownies.jpg",
+      "url": "https://images.unsplash.com/photo-1636743715220-d8f8dd900b87?auto=format&fit=crop&w=800&q=80",
+      "alt": "Potongan brownies cokelat"
+    },
+    {
+      "id": "kopi-latte",
+      "name": "Kopi Latte",
+      "type": "product",
+      "category": "Coffee",
+      "local_path": "assets/images/kopi-latte.jpg",
+      "url": "https://images.unsplash.com/photo-1559001724-fbad036dbc9e?auto=format&fit=crop&w=800&q=80",
+      "alt": "Secangkir kopi latte dengan latte art"
+    },
+    {
+      "id": "espresso",
+      "name": "Espresso",
+      "type": "product",
+      "category": "Coffee",
+      "local_path": "assets/images/espresso.jpg",
+      "url": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=800&q=80",
+      "alt": "Secangkir espresso pekat"
+    },
+    {
+      "id": "moka",
+      "name": "Moka",
+      "type": "product",
+      "category": "Coffee",
+      "local_path": "assets/images/moka.jpg",
+      "url": "https://images.unsplash.com/photo-1618576230663-9714aecfb99a?auto=format&fit=crop&w=800&q=80",
+      "alt": "Secangkir moka dengan susu"
+    },
+    {
+      "id": "red-velvet-latte",
+      "name": "Red Velvet Latte",
+      "type": "product",
+      "category": "Non-Coffee",
+      "local_path": "assets/images/red-velvet-latte.jpg",
+      "url": "https://images.unsplash.com/photo-1461010083959-8a5727311252?auto=format&fit=crop&w=800&q=80",
+      "alt": "Latte merah red velvet dalam mug"
+    },
+    {
+      "id": "taro-latte",
+      "name": "Taro Latte",
+      "type": "product",
+      "category": "Non-Coffee",
+      "local_path": "assets/images/taro-latte.jpg",
+      "url": "https://images.unsplash.com/photo-1680824131171-d4f39f51bf4b?auto=format&fit=crop&w=800&q=80",
+      "alt": "Latte taro ungu dalam gelas"
+    },
+    {
+      "id": "cookies",
+      "name": "Cookies Cokelat",
+      "type": "product",
+      "category": "Snack",
+      "local_path": "assets/images/cookies.jpg",
+      "url": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
+      "alt": "Cookies choco chip"
+    },
+    {
+      "id": "pisang-goreng",
+      "name": "Pisang Goreng Keju",
+      "type": "product",
+      "category": "Snack",
+      "local_path": "assets/images/pisang-goreng.jpg",
+      "url": "https://images.unsplash.com/photo-1762941904142-9d91ca413e66?auto=format&fit=crop&w=800&q=80",
+      "alt": "Pisang goreng dengan taburan gula/keju"
+    },
+    {
+      "id": "donat",
+      "name": "Donat Klasik",
+      "type": "product",
+      "category": "Snack",
+      "local_path": "assets/images/donat.jpg",
+      "url": "https://images.unsplash.com/photo-1570727624862-3008fe67a6be?auto=format&fit=crop&w=800&q=80",
+      "alt": "Donat dengan taburan warna-warni"
+    }
+  ],
+  "menus": [
+    {
+      "id": 1,
+      "name": "Kopi Susu Gula Aren",
+      "category": "Coffee",
+      "price": 18000,
+      "price_display": "Rp 18.000",
+      "description": "Espresso pekat, susu segar, dan gula aren khas Nusantara. Menu andalan Moo Coffee.",
+      "asset_id": "kopi-susu-gula-aren"
+    },
+    {
+      "id": 2,
+      "name": "Kopi Americano",
+      "category": "Coffee",
+      "price": 15000,
+      "price_display": "Rp 15.000",
+      "description": "Double espresso disiram air dingin dan es batu. Pilihan simple untuk penikmat kopi murni.",
+      "asset_id": "americano"
+    },
+    {
+      "id": 3,
+      "name": "Cappuccino",
+      "category": "Coffee",
+      "price": 20000,
+      "price_display": "Rp 20.000",
+      "description": "Espresso, susu steamed, dan busa lembut dengan latte art di permukaannya.",
+      "asset_id": "cappuccino"
+    },
+    {
+      "id": 4,
+      "name": "Caramel Macchiato",
+      "category": "Coffee",
+      "price": 22000,
+      "price_display": "Rp 22.000",
+      "description": "Espresso, susu vanila, dan sirup karamel manis yang berlapis.",
+      "asset_id": "caramel-macchiato"
+    },
+    {
+      "id": 5,
+      "name": "Matcha Latte",
+      "category": "Non-Coffee",
+      "price": 22000,
+      "price_display": "Rp 22.000",
+      "description": "Bubuk matcha pilihan disajikan dengan susu segar. Cocok untuk yang tidak minum kopi.",
+      "asset_id": "matcha-latte"
+    },
+    {
+      "id": 6,
+      "name": "Cokelat Klasik",
+      "category": "Non-Coffee",
+      "price": 18000,
+      "price_display": "Rp 18.000",
+      "description": "Cokelat pekat melarut dengan susu segar dan es batu. Favorit segala usia.",
+      "asset_id": "cokelat-klasik"
+    },
+    {
+      "id": 7,
+      "name": "Thai Tea",
+      "category": "Non-Coffee",
+      "price": 20000,
+      "price_display": "Rp 20.000",
+      "description": "Teh Thailand yang wangi dengan susu dan krim, disajikan dingin ber-es.",
+      "asset_id": "thai-tea"
+    },
+    {
+      "id": 8,
+      "name": "Es Lemon Tea",
+      "category": "Non-Coffee",
+      "price": 12000,
+      "price_display": "Rp 12.000",
+      "description": "Teh melati dingin dengan perasan lemon segar. Penyegar paling ringan di daftar menu.",
+      "asset_id": "es-lemon-tea"
+    },
+    {
+      "id": 9,
+      "name": "Croissant Mentega",
+      "category": "Snack",
+      "price": 15000,
+      "price_display": "Rp 15.000",
+      "description": "Croissant berlapis mentega, renyah di luar dan lembut di dalam.",
+      "asset_id": "croissant"
+    },
+    {
+      "id": 10,
+      "name": "Kentang Goreng",
+      "category": "Snack",
+      "price": 18000,
+      "price_display": "Rp 18.000",
+      "description": "Kentang goreng crispy disajikan dengan saus tomat dan mayonise.",
+      "asset_id": "kentang-goreng"
+    },
+    {
+      "id": 11,
+      "name": "Roti Bakar Cokelat Keju",
+      "category": "Snack",
+      "price": 16000,
+      "price_display": "Rp 16.000",
+      "description": "Roti bakar isi cokelat lumer dan keju parut. Teman ngopi paling klasik.",
+      "asset_id": "roti-bakar"
+    },
+    {
+      "id": 12,
+      "name": "Brownies Cokelat",
+      "category": "Snack",
+      "price": 15000,
+      "price_display": "Rp 15.000",
+      "description": "Brownies fudgy dengan topping saus cokelat, manisnya pas untuk penutup.",
+      "asset_id": "brownies"
+    },
+    {
+      "id": 13,
+      "name": "Kopi Latte",
+      "category": "Coffee",
+      "price": 20000,
+      "price_display": "Rp 20.000",
+      "description": "Espresso dengan susu steamed yang lembut. Pilihan klasik penikmat kopi susu.",
+      "asset_id": "kopi-latte"
+    },
+    {
+      "id": 14,
+      "name": "Espresso",
+      "category": "Coffee",
+      "price": 14000,
+      "price_display": "Rp 14.000",
+      "description": "Single shot espresso pekat untuk penikmat kopi tulen.",
+      "asset_id": "espresso"
+    },
+    {
+      "id": 15,
+      "name": "Moka",
+      "category": "Coffee",
+      "price": 22000,
+      "price_display": "Rp 22.000",
+      "description": "Perpaduan espresso, susu steamed, dan sirup cokelat yang harum.",
+      "asset_id": "moka"
+    },
+    {
+      "id": 16,
+      "name": "Red Velvet Latte",
+      "category": "Non-Coffee",
+      "price": 22000,
+      "price_display": "Rp 22.000",
+      "description": "Latte merah red velvet dengan rasa cokelat vanila yang mewah.",
+      "asset_id": "red-velvet-latte"
+    },
+    {
+      "id": 17,
+      "name": "Taro Latte",
+      "category": "Non-Coffee",
+      "price": 21000,
+      "price_display": "Rp 21.000",
+      "description": "Latte ubi ungu taro yang wangi, lembut, dan Instagramable.",
+      "asset_id": "taro-latte"
+    },
+    {
+      "id": 18,
+      "name": "Cookies Cokelat",
+      "category": "Snack",
+      "price": 13000,
+      "price_display": "Rp 13.000",
+      "description": "Cookies choco chip renyah dengan lelehan serpihan cokelat.",
+      "asset_id": "cookies"
+    },
+    {
+      "id": 19,
+      "name": "Pisang Goreng Keju",
+      "category": "Snack",
+      "price": 14000,
+      "price_display": "Rp 14.000",
+      "description": "Pisang goreng kriuk dengan parutan keju dan madu. Favorit nusantara.",
+      "asset_id": "pisang-goreng"
+    },
+    {
+      "id": 20,
+      "name": "Donat Klasik",
+      "category": "Snack",
+      "price": 12000,
+      "price_display": "Rp 12.000",
+      "description": "Donat lembut dengan taburan gula warna-warni yang menggemaskan.",
+      "asset_id": "donat"
+    }
+  ],
+  "summary": {
+    "coffee": 7,
+    "non_coffee": 6,
+    "snack": 7,
+    "total_menus": 20
+  }
+}

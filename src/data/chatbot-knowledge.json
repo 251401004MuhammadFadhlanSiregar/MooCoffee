@@ -1,0 +1,50 @@
+{
+  "business": {
+    "name": "Moo Coffee",
+    "description": "Kedai kopi di Kesawan, Kota Medan.",
+    "location": "Jl. Perdana No.24, Kesawan, Kec. Medan Bar., Kota Medan, Sumatera Utara 20111",
+    "hours": {
+      "senin_kamis": "11.00–01.00 WIB",
+      "jumat_minggu": "11.00–02.00 WIB"
+    },
+    "phone": null,
+    "email": null,
+    "google_maps": "https://maps.app.goo.gl/HL5GvNvqnvssWr1v7"
+  },
+  "menu": [
+    { "name": "Kopi Susu Gula Aren", "price": "Rp18.000", "description": "Espresso, susu segar, dan gula aren khas Nusantara." },
+    { "name": "Americano", "price": "Rp15.000", "description": "Kopi hitam dengan rasa espresso yang kuat." },
+    { "name": "Cappuccino", "price": "Rp20.000", "description": "Espresso dengan susu steamed dan foam lembut." },
+    { "name": "Caramel Macchiato", "price": "Rp22.000", "description": "Espresso creamy dengan caramel manis." },
+    { "name": "Espresso", "price": "Rp12.000", "description": "Kopi espresso murni dengan rasa intens." },
+    { "name": "Cafe Latte", "price": "Rp20.000", "description": "Espresso dengan susu creamy." },
+    { "name": "Moka", "price": "Rp23.000", "description": "Perpaduan espresso dan cokelat." },
+    { "name": "Matcha Latte", "price": "Rp22.000", "description": "Matcha premium dengan susu creamy." },
+    { "name": "Thai Tea", "price": "Rp20.000", "description": "Thai tea segar khas Thailand." },
+    { "name": "Red Velvet Latte", "price": "Rp22.000", "description": "Minuman red velvet lembut." },
+    { "name": "Taro Latte", "price": "Rp21.000", "description": "Taro creamy dengan rasa manis." },
+    { "name": "Es Lemon Tea", "price": "Rp15.000", "description": "Teh lemon segar." },
+    { "name": "Cokelat Klasik", "price": "Rp20.000", "description": "Minuman cokelat creamy." },
+    { "name": "Croissant", "price": "Rp15.000", "description": "Croissant butter renyah." },
+    { "name": "Brownies Cokelat", "price": "Rp18.000", "description": "Brownies cokelat lembut." },
+    { "name": "Kentang Goreng", "price": "Rp17.000", "description": "Kentang crispy." },
+    { "name": "Roti Bakar", "price": "Rp16.000", "description": "Roti bakar hangat." },
+    { "name": "Donat", "price": "Rp12.000", "description": "Donat lembut." },
+    { "name": "Pisang Goreng", "price": "Rp15.000", "description": "Pisang goreng renyah." },
+    { "name": "Cookies", "price": "Rp14.000", "description": "Cookies teman kopi." }
+  ],
+  "promos": [
+    {
+      "name": "Buy 1 Get 1 Kopi Susu",
+      "description": "Beli 1 gelas Kopi Susu Gula Aren, gratis 1 gelas lagi. Berlaku setiap hari dan tidak dapat digabungkan dengan promo lain."
+    },
+    {
+      "name": "Diskon Pelajar 20%",
+      "description": "Untuk pelajar dan mahasiswa dengan kartu aktif. Berlaku setiap hari, maksimal 2 item."
+    },
+    {
+      "name": "Paket Ngopi + Croissant",
+      "description": "Paket kopi pilihan dengan Croissant selama persediaan tersedia."
+    }
+  ]
+}
