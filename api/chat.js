@@ -10,10 +10,10 @@ export default async function handler(request, response) {
   }
 
   const apiKey = globalThis.process.env.AI_API_KEY;
-  const model = globalThis.process.env.AI_MODEL;
-  if (!apiKey || !model) {
+  const model = globalThis.process.env.AI_MODEL || "qwen/qwen3.8-27b";
+  if (!apiKey) {
     return response.status(503).json({
-      error: "Chatbot belum dikonfigurasi. Admin perlu mengatur AI_API_KEY dan AI_MODEL.",
+      error: "Chatbot belum dikonfigurasi. Tambahkan AI_API_KEY di Environment Variables Vercel, lalu redeploy.",
     });
   }
 
@@ -36,7 +36,7 @@ export default async function handler(request, response) {
 
   const apiUrl = getChatCompletionsUrl(
     globalThis.process.env.AI_API_URL ||
-      "https://api.openai.com/v1/chat/completions",
+      "https://api.groq.com/openai/v1/chat/completions",
   );
   const systemMessage = {
     role: "system",
@@ -107,7 +107,7 @@ function getChatCompletionsUrl(configuredUrl) {
 
 function getProviderErrorMessage(status) {
   if (status === 401) {
-    return "Groq menolak AI_API_KEY (HTTP 401). Pastikan key aktif dari Groq Console. Setelah mengubah .env.local, restart server lokal; jika memakai hosting, perbarui AI_API_KEY di dashboard hosting lalu deploy ulang.";
+    return "Groq menolak AI_API_KEY (HTTP 401). Periksa apakah key aktif. Di Vercel, perbarui AI_API_KEY lalu redeploy.";
   }
   if (status === 403) {
     return "Groq menolak akses untuk API key ini (HTTP 403). Periksa status key dan izin project di Groq Console.";
